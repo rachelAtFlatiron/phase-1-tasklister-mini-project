@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //e.target.name.value
     //e.target["reserved-symbol-name"].value
     // '-' is reserved for subtraction
-    newTaskDescription = e.target["new-task-description"].value 
+    let newTaskDescription = e.target["new-task-description"].value 
 
     //3. create nodes (li) and append to task list
     let li = document.createElement('li')
