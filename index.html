@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
+  <!-- using the keyword defer to make sure elements load before javascript -->
+  <!-- <script defer src="./src/index.js"></script> -->
+
 </head>
 <body>
   <div id="main-content">
@@ -12,7 +15,7 @@
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input id="submit" type="submit" value="Create New Task">
     </form>
 
     <div id="list">
@@ -20,7 +23,7 @@
       <ul id="tasks">
       </ul>
     </div>
-
+    <!-- putting the script below all HTML to make sure HTML loads before javascript -->
     <script src="./src/index.js"></script>
   </div>
 
